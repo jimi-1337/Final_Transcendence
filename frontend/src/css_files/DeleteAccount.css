@@ -1,0 +1,44 @@
+.DeletePopUp
+{
+
+
+    z-index: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0, 0.7);
+}
+.InputForm{
+
+    align-items: center;
+    justify-content: center;
+}
+
+.BoxDelete
+{
+    z-index: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 1rem;
+    border: 0.2rem solid #333;
+    text-align: center;
+}
+
+.DeleteBtn {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Delete:hover {
+    background: rgb(221, 42, 42);
+}

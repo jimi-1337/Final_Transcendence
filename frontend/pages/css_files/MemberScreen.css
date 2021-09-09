@@ -1,0 +1,13 @@
+.text-back
+{
+    color: black;
+}
+
+.main-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 5%;
+}

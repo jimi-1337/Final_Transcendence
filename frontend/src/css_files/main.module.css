@@ -1,0 +1,285 @@
+/* :root {
+    --primary-color: #425b84;
+    --secondary-color: #5b7bb4;
+    --max-width: 1100px;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 1rem/1.5 'Arial', sans-serif;
+    background: rgb(0, 0, 0, 0.6);
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.3rem;
+} */
+
+
+.banner{
+    height: 100vh;
+    background-color: #333;
+    background: url('./img/pong.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    /* opacity: 0.9; */
+    z-index: -1000;
+}
+.showcase {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+
+/* .position {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.clear {
+    clear: both;
+} 
+
+#main-header {
+    background: rgb(0, 0, 0, 0.6);
+    padding: 4rem 0;
+}
+
+
+*/
+
+
+
+/* ABOUT PROJECT */
+
+  
+.contwrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+  
+
+  
+/* ADDED */
+
+.maintimeline{ font-family: 'Poppins', sans-serif;
+position: relative;
+padding: 2rem 0; }
+.maintimeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.maintimeline:before{
+    content: '';
+    height: 100%;
+    width: 3px;
+    border-left: 3px dashed #fff;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.maintimeline .timeline{
+    width: 50%;
+    padding: 15px 15px 15px 55px;
+    margin: 0 0 0 5px;
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+.maintimeline .timeline:before{
+    content: '';
+    background-color: #52d648;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -10px;
+    top: 50%;
+}
+.maintimeline .timelinecontent{
+    color: #777;
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    display: block;
+    position: relative;
+}
+.maintimeline .timelinecontent:hover{ text-decoration: none; }
+.maintimeline .timelinecontent:before,
+.maintimeline .timelinecontent:after{
+    content: "";
+    background: #52d648;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: -33px;
+    z-index: -1;
+}
+.maintimeline .timelinecontent:after{
+    background: linear-gradient(to left, transparent, #52d648);
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    transform: translateY(0);
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    z-index: -2;
+}
+.maintimeline .timelineicon{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 0 0 10px;
+}
+.maintimeline .title{
+    color: #52d648;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.maintimeline .description{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.maintimeline .timeline:nth-child(even){
+    padding: 15px 55px 15px 15px;
+    margin: 0 5px 0 0;
+    float: left;
+}
+.maintimeline .timeline:nth-child(even):before{
+    left: auto;
+    right: -10px;
+}
+.maintimeline .timeline:nth-child(even) .timelinecontent:before{
+    left: auto;
+    right: -33px;
+}
+.maintimeline .timeline:nth-child(even) .timelinecontent:after{ transform: rotate(180deg); }
+.maintimeline .timeline:nth-child(4n+2):before,
+.maintimeline .timeline:nth-child(4n+2) .timelinecontent:before{
+    background-color: #37B2DE
+}
+.maintimeline .timeline:nth-child(4n+2) .timelinecontent:after{
+    background: linear-gradient(to left, transparent, #37B2DE);
+}
+.maintimeline .timeline:nth-child(4n+2) .title{     color: #37B2DE; }
+.maintimeline .timeline:nth-child(4n+3):before,
+.maintimeline .timeline:nth-child(4n+3) .timelinecontent:before{
+    background-color: #F38F31
+}
+.maintimeline .timeline:nth-child(4n+3) .timelinecontent:after{
+    background: linear-gradient(to left, transparent, #F38F31);
+}
+.maintimeline .timeline:nth-child(4n+3) .title{ color: #F38F31; }
+.maintimeline .timeline:nth-child(4n+4):before,
+.maintimeline .timeline:nth-child(4n+4) .timelinecontent:before{
+    background-color: #E65455
+}
+.maintimeline .timeline:nth-child(4n+4) .timelinecontent:after{
+    background: linear-gradient(to left, transparent, #E65455);
+}
+.maintimeline .timeline:nth-child(4n+4) .title{ color: #E65455; }
+
+
+@media screen and (max-width:767px){
+    .maintimeline:before{
+        transform: translateX(-50%);
+        left: 0.2rem;
+    }
+    .maintimeline .timeline,
+    .maintimeline .timeline:nth-child(even){
+        width: 100%;
+        padding: 15px 15px 15px 55px;
+        margin: 0 0 30px;
+    }
+    .maintimeline .timeline:before,
+    .maintimeline .timeline:nth-child(even):before{
+        left: -7px;
+    }
+    .maintimeline .timelinecontent:before,
+    .maintimeline .timeline:nth-child(even) .timelinecontent:before{
+        left: -33px;
+        right: auto;
+    }
+    .maintimeline .timeline:nth-child(even) .timelinecontent:after{ transform: rotate(0); }
+    .maintimeline .title{ font-size: 23px; }
+}
+
+
+
+/* Footer */
+/* #div{ 
+    display:block; 
+    }  */
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover .yt {
+    color: #dc3545;
+}
+
+.footer a:hover .fb {
+    color: #4267B2;
+}
+.footer a:hover .tw {
+    color: #1DA1F2;
+}
+.footer a:hover .li {
+    color: #2867B2;
+}
+
+.footer .social > * {
+    margin-right: 30px;
+}
+
+@media screen and (max-width:320px) {
+    .over {
+        overflow-x:scroll;
+    }
+}

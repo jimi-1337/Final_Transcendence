@@ -1,0 +1,92 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                  Int       @id @default(autoincrement())
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  username            String    @unique
+  password            String      
+  email               String    @unique
+  intra_username       String    @unique
+  num_wins            Int
+  num_loss            Int
+  ladder_level        Int
+  num_won_tournaments Int
+  avatar              String
+  factory_auth        Boolean  @default(false)
+  factory_email       String? @unique
+  auth_code           String?
+  status              String
+  blocked             Int[]
+  rating              Int
+  title               String?
+  admin_op            Boolean @default(false)
+  owner               Boolean @default(false)
+  country             String
+  campus              String
+  time_zone           String
+  first_name          String
+  last_name           String
+  matches             Int[]
+  friends             Int[]
+  messages            Int[]
+  inGame              String?
+}
+
+model Friendship {
+  id                  Int      @id @default(autoincrement())
+  user1               Int
+  user2               Int
+  status              Boolean @default(false)
+  @@unique([user1, user2])
+}
+
+model Channel{
+  id                  Int      @id @default(autoincrement())
+  name                String   @unique
+  status              String
+  password            String?
+  users               Int[]
+  admin               Int[]
+  messages            Int[]
+  banned              Int[]
+  owner               Int
+  muted               Int[]
+  release              Int[]
+}
+
+model Match{
+  id                  Int      @id @default(autoincrement())
+  player1             Int
+  player2             Int
+  winner              Int
+  type                String
+  arena               String
+  reward              Int
+  round               Int
+  title               String?
+  gameId              String @unique
+  live                Boolean @default(false)
+  random              Boolean @default(false)
+}
+
+
+model messsage{
+  id                  Int      @id @default(autoincrement())
+  sender              Int
+  receiver            Int
+  message             String
+  type                Boolean @default(false)
+  createdAt           DateTime  @default(now())
+  seen                Boolean @default(false)
+}

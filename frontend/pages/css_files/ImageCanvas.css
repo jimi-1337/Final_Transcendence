@@ -1,0 +1,87 @@
+.ImageCanvas
+{
+    max-width: 15rem;
+    max-height: 15rem;
+
+    min-width: 15rem;
+    min-height: 15rem;
+}
+
+.text-black
+{
+    color: black;
+}
+
+
+.SubmitButton{
+    margin-left: 1.5rem;
+    margin-right: -2rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.ChoiceButton
+{
+    /* align-items: center; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10%;
+    /* margin-right: -5%; */
+
+    /* left: 50%; */
+    /* right: 50%; */
+}
+
+.ChoiceButton.row{
+    padding-right: 0;
+}
+
+.test {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.SubmitButton:hover
+{
+    background: green;
+    /* color: green; */
+}
+.FileInput
+{
+    cursor: pointer;
+    color: black;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+
+}
+
+.FileInput::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.FileInput::before {
+    border: 0px;
+    color: hotpink;
+}
+
+.SelectedFile
+{
+    text-align: center;
+    padding: 1.5rem;
+}
+

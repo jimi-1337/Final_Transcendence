@@ -1,0 +1,29 @@
+.text-back
+{
+    color: black;
+}
+
+.main-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 5%;
+}
+
+.SmallMessage {
+     display: none;
+}
+
+
+@media only screen and (max-width: 544px) {
+    .GameFrame {
+       display: none;
+    }
+
+    .SmallMessage {
+        color: black;
+        display: block;
+    }
+  }

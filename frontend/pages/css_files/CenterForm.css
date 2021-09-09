@@ -1,0 +1,12 @@
+.CenterInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+}
+
+.FormCenter
+{
+    flex-grow: 3;
+}
+

@@ -1,0 +1,22 @@
+
+.jZkBQk{
+  z-index: 500;
+}
+
+.text-red {
+  color: darkred;
+}
+
+.text-green {
+  color: greenyellow;
+}
+
+.search{
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .search{
+    width: 20rem;
+  }
+}

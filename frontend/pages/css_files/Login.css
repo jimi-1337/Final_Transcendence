@@ -1,0 +1,87 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.Color_Div {
+    background-image: url('./img/street_fighter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Numans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.LoginBox {
+  margin: auto;
+  width: 60%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+
+}
+
+.mar {
+    margin: 3rem;
+}
+
+.Bottun_log {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.intra-btn {
+    background: #00babc;
+    color: #111;
+    border: #f4f4f4;
+    font-weight: bold;
+}
+
+.intra-btn:hover {
+    background-color: #037d80;
+    color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+
+.our-form-control {
+    background-color: rgb(255, 255, 255, 0.12);
+    color: rgb(196, 185, 185);
+}
+
+
+@media screen and (max-width: 480px)
+{
+    .mar {
+        margin: 1.5rem 0.5rem;
+    }
+}
